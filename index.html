@@ -19,6 +19,7 @@
 
 
 <link href="https://fonts.googleapis.com/css?family=Anton|Baloo|Helvetica|Arial" rel="stylesheet">
+<link rel="preload" href="https://a5.behance.net/57d4aeaa71d6056425089a7c0448dd0bf07edde2/fonts/AcuminPro/acumin.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 <!--************************************************************************ fichier ccs ***************************************************** -->
  <link rel="stylesheet" type="text/css" href="style.css">
 
@@ -31,67 +32,97 @@
 
  <nav class="navbar navbar-expand-lg navbar-light">
 
+  
+
      <button class="navbar-toggler button-navbar" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
 
-        <span class="navbar-toggler-icon"></span>
+        <svg class="rf-icon rf-icon--hamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 10" height="16" width="15"><path d="M0 8h15v2H0zM0 4h15v2H0zM0 0h15v2H0z"></path></svg>
+
      </button>
 
      <!-- logo -->
 
-        <a class="navbar-brand behance text-white text-left" href="#"> Behance </a>
+        <a class="navbar-brand behance ml-3 text-white text-left" href="#"> <svg class="rf-logo rf-logo--behance" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 152.5 28.2" width="85" height="18"><path d="M13.1 0c1.3 0 2.5.1 3.6.4 1.1.2 2 .6 2.8 1.1.8.5 1.4 1.2 1.8 2.1.4.9.6 2 .6 3.2 0 1.4-.3 2.6-1 3.5-.6.9-1.6 1.7-2.8 2.3 1.7.5 3 1.4 3.8 2.6.8 1.2 1.3 2.7 1.3 4.4 0 1.4-.3 2.6-.8 3.6s-1.3 1.9-2.2 2.5c-.9.6-2 1.1-3.2 1.4-1.2.3-2.4.5-3.6.5H0V0h13.1zm-.8 11.2c1.1 0 2-.3 2.7-.8.7-.5 1-1.4 1-2.5 0-.6-.1-1.2-.3-1.6-.2-.4-.5-.7-.9-1-.4-.2-.8-.4-1.3-.5-.5-.1-1-.1-1.6-.1H6.1v6.5h6.2zm.3 11.8c.6 0 1.2-.1 1.7-.2s1-.3 1.4-.6c.4-.3.7-.6 1-1.1.2-.5.4-1.1.4-1.8 0-1.4-.4-2.4-1.2-3.1-.8-.6-1.9-.9-3.2-.9H6.1V23h6.5zM31.9 22.9c.8.8 2 1.2 3.6 1.2 1.1 0 2.1-.3 2.9-.8.8-.6 1.3-1.2 1.5-1.8h4.9c-.8 2.4-2 4.1-3.6 5.2-1.6 1-3.5 1.6-5.8 1.6-1.6 0-3-.3-4.3-.8-1.3-.5-2.3-1.2-3.2-2.2-.9-.9-1.6-2-2-3.3-.5-1.3-.7-2.7-.7-4.3 0-1.5.2-2.9.7-4.2.5-1.3 1.2-2.4 2.1-3.4.9-.9 2-1.7 3.2-2.2 1.3-.5 2.6-.8 4.2-.8 1.7 0 3.2.3 4.5 1 1.3.7 2.3 1.5 3.1 2.7.8 1.1 1.4 2.4 1.8 3.8.2 1.4.3 2.8.2 4.4H30.5c0 1.6.6 3.1 1.4 3.9zm6.3-10.5c-.7-.7-1.8-1.1-3.1-1.1-.9 0-1.6.2-2.2.5-.6.3-1 .7-1.4 1.1-.4.4-.6.9-.7 1.4-.1.5-.2.9-.2 1.3h9c-.2-1.5-.7-2.5-1.4-3.2zM52.8 0v10.4h.1c.7-1.2 1.6-2 2.7-2.5s2.1-.8 3.2-.8c1.5 0 2.7.2 3.6.6.9.4 1.7 1 2.2 1.7.5.7.9 1.6 1.1 2.6.2 1 .3 2.1.3 3.4v12.3h-5.5V16.4c0-1.7-.3-2.9-.8-3.7-.5-.8-1.4-1.2-2.7-1.2-1.5 0-2.6.5-3.2 1.3-.7.9-1 2.4-1 4.4v10.5h-5.5V0h5.5zM70 10.6c.6-.9 1.3-1.5 2.2-2.1.9-.5 1.9-.9 3-1.1 1.1-.2 2.2-.3 3.3-.3 1 0 2 .1 3.1.2 1 .1 2 .4 2.8.8.9.4 1.5 1 2.1 1.7.5.7.8 1.7.8 2.9v10.5c0 .9.1 1.8.2 2.6s.4 1.5.7 1.9h-5.6c-.2-.2-.3-.6-.4-.9-.1-.3-.1-.7-.1-1-.9.9-1.9 1.5-3.1 1.9-1.2.4-2.4.5-3.6.5-1 0-1.8-.1-2.7-.4-.8-.2-1.5-.6-2.2-1.1-.6-.5-1.1-1.1-1.5-1.9-.3-.8-.5-1.6-.5-2.7s.2-2.1.6-2.8c.4-.7.9-1.3 1.5-1.8.6-.4 1.4-.8 2.2-1 .8-.2 1.6-.4 2.5-.5l2.4-.3c.8-.1 1.5-.2 2.1-.3.6-.2 1.1-.4 1.5-.7.4-.3.5-.7.5-1.3 0-.6-.1-1.1-.3-1.4-.2-.3-.5-.6-.8-.8-.3-.2-.7-.3-1.1-.4-.4-.1-.9-.1-1.4-.1-1.1 0-1.9.2-2.5.7-.6.5-1 1.3-1.1 2.3h-5.5c0-1.2.4-2.3.9-3.1zm10.9 7.8c-.3.1-.7.2-1.1.3-.4.1-.8.1-1.3.2-.4.1-.9.1-1.3.2l-1.2.3c-.4.1-.8.3-1 .5-.3.2-.5.5-.7.8-.3.4-.3.8-.3 1.3s.1.9.3 1.2c.2.3.4.6.7.8.3.2.7.3 1.1.4.4.1.8.1 1.3.1 1.1 0 1.9-.2 2.5-.5.6-.4 1-.8 1.3-1.3.3-.5.5-1 .5-1.5.1-.5.1-.9.1-1.2v-2.1c-.3.2-.6.4-.9.5zM95.6 7.6v2.8h.1c.7-1.2 1.6-2 2.7-2.5s2.3-.8 3.4-.8c1.5 0 2.7.2 3.6.6 1 .4 1.7 1 2.2 1.7.5.7.9 1.6 1.2 2.6.2 1 .3 2.1.3 3.4v12.3h-5.5V16.4c0-1.7-.3-2.9-.8-3.7-.5-.8-1.4-1.3-2.8-1.3-1.5 0-2.6.6-3.3 1.5-.7.9-1 2.4-1 4.4v10.5h-5.5V7.6h5.4zM121.4 11.2c-.9 0-1.6.2-2.2.6-.6.4-1.1.9-1.5 1.6-.4.6-.6 1.3-.8 2.1-.2.8-.2 1.5-.2 2.3 0 .7.1 1.5.2 2.2.2.8.4 1.4.8 2 .4.6.8 1.1 1.4 1.5.6.4 1.3.6 2.2.6 1.3 0 2.3-.4 3.1-1.1.7-.7 1.2-1.7 1.3-3h5.3c-.4 2.7-1.4 4.7-3.1 6.1-1.7 1.4-3.9 2.1-6.6 2.1-1.5 0-2.9-.3-4.1-.8-1.3-.5-2.3-1.2-3.2-2.1-.9-.9-1.6-2-2.1-3.2-.5-1.3-.7-2.6-.7-4.1 0-1.6.2-3 .7-4.3.5-1.3 1.1-2.5 2-3.5.9-1 2-1.7 3.2-2.3 1.3-.5 2.7-.8 4.3-.8 1.2 0 2.3.2 3.4.5s2.1.8 2.9 1.4c.9.6 1.6 1.4 2.1 2.4.5.9.8 2.1.9 3.4h-5.4c-.2-2.4-1.5-3.6-3.9-3.6zM29.4 1.9h11.2v2.7H29.4zM139.3 22.9c.8.8 2.1 1.2 3.6 1.2 1.1 0 2.1-.3 2.9-.8.8-.6 1.3-1.2 1.5-1.8h4.8c-.8 2.4-2 4.1-3.6 5.2-1.6 1-3.5 1.6-5.8 1.6-1.6 0-3-.3-4.3-.8-1.3-.5-2.3-1.2-3.2-2.2-.9-.9-1.6-2-2-3.3-.5-1.3-.7-2.7-.7-4.3 0-1.5.2-2.9.7-4.2.5-1.3 1.2-2.4 2.1-3.4.9-.9 2-1.7 3.2-2.2 1.3-.5 2.7-.8 4.2-.8 1.7 0 3.2.3 4.4 1 1.3.7 2.3 1.5 3.1 2.7.8 1.1 1.4 2.4 1.8 3.8.4 1.4.5 2.9.4 4.5h-14.5c0 1.5.6 3 1.4 3.8zm6.4-10.5c-.7-.7-1.8-1.1-3.1-1.1-.9 0-1.6.2-2.2.5-.6.3-1.1.7-1.4 1.1-.3.4-.6.9-.7 1.4-.1.5-.2.9-.2 1.3h9c-.3-1.5-.8-2.5-1.4-3.2z"></path></svg> </a>
 
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
       
 
       <ul class="navbar-nav Navbar-center">
 
          <li class="nav-item active">
-           <a class="nav-link text-white" href="#">Découvrir <span class="sr-only">(current)</span></a>
+           <a class="nav-link text-white" href="#"> <strong> Découvrir </strong> <span class="sr-only">(current)</span></a>
          </li>
 
          <li class="nav-item">
-          <a class="nav-link text-white" href="#">Direct</a>
+          <a class="nav-link text-secondary" href="#"> <strong> Direct </strong> </a>
          </li>
 
          <li class="nav-item">
-          <a class="nav-link text-white" href="#"> offre d'emploie</a>
+          <a class="nav-link text-secondary" href="#"> <strong> offre d'emploie </strong> </a>
          </li>
 
 <!-- inscription -->
 
          <li class="nav-item">
-           <a class="btn btn-sm btn-primary navbar-button" href="#"> <strong> S'inscrire avec une adresse e-mail 
-             </strong> </a>
+           <a class="btn navbar-button text-white" href="#">  S'inscrire avec une adresse e-mail 
+              </a>
          </li>
 
          <li class="nav-item">
-          <a class="nav-link text-white" href="#"> ou</a>
+          <a class="nav-link text-secondary" href="#"> ou</a>
          </li>
 
          <li class="nav-item">
-          <a class="nav-link text-white" href="#"> <i class="fab fa-facebook-f"></i> </a>
+          <a class="nav-link btn  facebook-button text-white" href="#"> <i class="fab fa-facebook-f"></i> </a>
          </li>
 
 
          <li class="nav-item">
-          <a class="nav-link text-white" href="#"><i class="fab fa-google"></i> </a>
+          <a class="nav-link btn google-button text-white ml-2" href="#"><svg class="rf-logo rf-logo--google" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="3236 169 16 16"><defs><style>.cls-1 { fill: #4285f4; } .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 { fill-rule: evenodd; } .cls-2 { fill: #34a853; } .cls-3 { fill: #fbbc05; } .cls-4 { fill: #ea4335; } .cls-5 { fill: none; }</style></defs><g id="Group_3" data-name="Group 3"><path id="Shape" d="M3251.68 177.18a9.192 9.192 0 0 0-.145-1.636H3244v3.095h4.305a3.68 3.68 0 0 1-1.6 2.414v2.006h2.585a7.8 7.8 0 0 0 2.39-5.88z" class="cls-1"></path><path id="Shape-2" d="M3243.996 185a7.638 7.638 0 0 0 5.294-1.938l-2.585-2.007a4.826 4.826 0 0 1-7.185-2.535h-2.673v2.073a8 8 0 0 0 7.15 4.407z" class="cls-2" data-name="Shape"></path><path id="Shape-3" d="M3239.524 178.52a4.73 4.73 0 0 1 0-3.04v-2.072h-2.673a8.01 8.01 0 0 0 0 7.185l2.674-2.073z" class="cls-3" data-name="Shape"></path><path id="Shape-4" d="M3243.996 172.182a4.322 4.322 0 0 1 3.058 1.2l2.295-2.295a7.688 7.688 0 0 0-5.354-2.087 8 8 0 0 0-7.15 4.407l2.674 2.073a4.768 4.768 0 0 1 4.476-3.3z" class="cls-4" data-name="Shape"></path><path id="Shape-5" d="M3236 169h16v16h-16z" class="cls-5" data-name="Shape"></path></g></svg> </a>
          </li>
 
 
      </ul>
 
      <ul class="nav navbar-nav Navbar-right">
+
+          
+
 <!-- connexion -->
+
          <li class="nav-item">
-          <a class="nav-link text-white" href="#"> Se connexion</a>
+          <a class="nav-link text-secondary" href="#"> <i class="fas fa-search"></i> </a>
+         </li>
+
+         <li class="nav-item">
+          <a class="nav-link text-secondary" href="#"> <strong> Se connecter </strong> </a>
+         </li>
+
+
+<!-- app -->
+
+         <li class="nav-item">
+          <i class="fas fa-align-center adobe-icon mr-2 ml-2 mt-2 text-secondary"></i>
+         </li>
+
+
+<!-- Adobe -->
+
+         <li class="nav-item">
+          <i class="fab  fa-adobe text-secondary adobe-icon mt-2 mr-3 ml-3 hidden-md"> Adobe</i>
          </li>
 
       </ul>
      
 
    </div>
-   <!-- Search -->
+
+ <!-- Search -->
+
     <a class="nav-link text-white" href="#"> <i class="fas fa-search"></i> </a>
+
 </nav>
 
 
@@ -103,7 +134,7 @@
   <div class="container">
 
     <center>
-    <h1 class="display-4">  Présentez et Découvrez des travaux de création </h1>
+    <h1 class="display-4"> <b>  Présentez et Découvrez </br> des travaux de création </b> </h1>
     </center>
 
   </div>
@@ -112,14 +143,14 @@
 
 <!--  ************************************************* SECOND NAV BAR ********************************************************** -->
 
-<div class="container sc"> 
-
+<div class="container-fluid sc"> 
+<center>
 <ul class="nav justify-content-center">
   <li class="nav-item">
     <a class="nav-link active" href="#"> <strong> Le meilleur de Behance </strong> </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#"><strong> Gallerie certifiée </strong> </a>
+    <a class="nav-link" href="#"> <b> Gallerie certifiée</b>  </a>
   </li>
 
   <li class="nav-item">
@@ -127,246 +158,413 @@
   </li>
 
    <li class="nav-item">
-    <a class="nav-link" href="#"> <strong> Ecoles et organisations </strong> </a>
+    <a class="nav-link" href="#"> <strong>  Écoles et organisations  </strong> </a>
   </li>
  
 </ul>
-
+</center>
 </div>
 
  <!-- **************************************** ALBUM **************************** -->
 
  <div class="container">
-   
+   <center>
       <div class="row">
 
 <!-- ************** FIRST IMAGE **************** -->
 
-   <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6"> 
+   <div class="col-lg col-md col-sm-6 col-xs-6"> 
          
 
 
-            <div class="card">
-                <img src="vv.png" class="card-img-top" alt="...">
-                      <div class="card-body">
+       <div class="card">
+               
+           <img class="rf-project-cover__image" src="https://mir-s3-cdn-cf.behance.net/projects/202/10abcf76193365.Y3JvcCwxOTgxLDE1NDksNDI2LDE2Ng.jpg" srcset="https://mir-s3-cdn-cf.behance.net/projects/202/10abcf76193365.Y3JvcCwxOTgxLDE1NDksNDI2LDE2Ng.jpg, https://mir-s3-cdn-cf.behance.net/projects/404/10abcf76193365.Y3JvcCwxOTgxLDE1NDksNDI2LDE2Ng.jpg 2x" alt="HAZE Stills" title="HAZE Stills">
+        
+                <div class="card-body">
 
-                         <h5 class="text-left"> <a href="#"> SC99 . RENDEROOM</a> </h5>
-                  <p class="text-left"> Serial CUT</p> 
+                    <h5 class="text-left"> <a href="#"> <strong>  HAZE Stills </strong> </a> </h5>
+                  
+                   <br>
+                  <p class="text-left"> Staudinger + Franke</p> 
                   <p class="text-left"> ....</p> 
-                  <p class="text-left"> Direction artistique</p> 
-                   <p class="line"> </p> 
+                  <p class="text-left"> photographie</p> 
+                  <p class="line"> </p> 
+
                          <div class="row">
                          <div class="col-md-6 text-left">  
-                 <i class="fas fa-eye emoji"> 45</i>  </div> 
+                 <i class="fas fa-eye emoji ml-5"> 5</i>   <i class="fas fa-eye emoji mr-4"> 30</i>     </div> 
                 <div class="col-md-6 text-center">
-               <i class="fas fa-eye emoji"> 123</i>  </div>
-
-             </div>
+               <i class="fas fa-bookmark emoji ml-4"></i>  </div>
+                
+                        </div>
     
-  </div>
-</div>
+                </div>
+       </div>
 
-
-
-
-        
-   </div>
+    </div>
 
 
 
 <!-- ****************** SECOND IMAGE ***************** -->
 
-<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6"> 
-          <div class="card">
-                <img src="vv.png" class="card-img-top" alt="...">
-                      <div class="card-body">
+<div class="col-lg col-md col-sm-6 col-xs-6"> 
 
-                         <h5 class="text-left"> <a href="#"> SC99 . RENDEROOM</a> </h5>
-                  <p class="text-left"> Serial CUT</p> 
-                  <p class="text-left"> ....</p> 
-                  <p class="text-left"> Direction artistique</p> 
-                   <p class="line"> </p> 
-                         <div class="row">
-                         <div class="col-md-6 text-left">  
-                 <i class="fas fa-eye emoji"> 45</i>  </div> 
+     <div class="card">
+           
+           <img class="rf-project-cover__image" src="https://mir-s3-cdn-cf.behance.net/projects/202/0f520074915931.Y3JvcCwxNzA0LDEzMzMsMTQ3LDA.jpg" srcset="https://mir-s3-cdn-cf.behance.net/projects/202/0f520074915931.Y3JvcCwxNzA0LDEzMzMsMTQ3LDA.jpg, https://mir-s3-cdn-cf.behance.net/projects/404/0f520074915931.Y3JvcCwxNzA0LDEzMzMsMTQ3LDA.jpg 2x" alt="Chavea" title="Chavea">
+
+            <div class="card-body">
+
+             <h5 class="text-left"> <a href="#"> <strong> SC99 . RENDEROOM </strong> </a> </h5>
+              <br>
+
+               <p class="text-left"> Serial CUT</p> 
+               <p class="text-left"> ....</p> 
+               <p class="text-left"> Direction artistique</p> 
+               <p class="line"> </p> 
+
+           <div class="row">
+                 <div class="col-md-6 text-left">  
+                 <i class="fas fa-eye emoji ml-5"> 5</i>   <i class="fas fa-eye emoji mr-4"> 10</i>     </div> 
                 <div class="col-md-6 text-center">
-               <i class="fas fa-eye emoji"> 123</i>  </div>
-
-             </div>
+               <i class="fas fa-bookmark emoji ml-4"></i>  </div>
+           </div>
     
-  </div>
-</div>
+           </div>
+     </div>
 
 </div>
 
 
 <!--************** THIRD IMAGE ***************** -->
 
-<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6"> 
-      <div class="card">
-                <img src="vv.png" class="card-img-top" alt="...">
-                      <div class="card-body">
+ 
+<div class="col-lg col-md col-sm-6 col-xs-6"> 
 
-                         <h5 class="text-left"> <a href="#"> SC99 . RENDEROOM</a> </h5>
-                  <p class="text-left"> Serial CUT</p> 
-                  <p class="text-left"> ....</p> 
-                  <p class="text-left"> Direction artistique</p> 
-                   <p class="line"> </p> 
-                         <div class="row">
-                         <div class="col-md-6 text-left">  
-                 <i class="fas fa-eye emoji"> 45</i>  </div> 
+       <div class="card">
+           <img class="rf-project-cover__image" src="https://mir-s3-cdn-cf.behance.net/projects/202/54eff176052057.Y3JvcCw2MjA2LDQ4NTQsMCwxNTgy.jpg" srcset="https://mir-s3-cdn-cf.behance.net/projects/202/54eff176052057.Y3JvcCw2MjA2LDQ4NTQsMCwxNTgy.jpg, https://mir-s3-cdn-cf.behance.net/projects/404/54eff176052057.Y3JvcCw2MjA2LDQ4NTQsMCwxNTgy.jpg 2x" alt="The catastrophes" title="The catastrophes">
+
+         <div class="card-body">
+
+             <h5 class="text-left"> <a href="#"> <strong> SC99 . RENDEROOM </strong> </a> </h5>
+               <br>
+             <p class="text-left"> Serial CUT</p> 
+             <p class="text-left"> ....</p> 
+             <p class="text-left"> Direction artistique</p> 
+             <p class="line"> </p> 
+
+               <div class="row">
+                      <div class="col-md-6 text-left">  
+                 <i class="fas fa-eye emoji ml-5"> 4</i>   <i class="fas fa-eye emoji mr-4"> 20</i>     </div> 
                 <div class="col-md-6 text-center">
-               <i class="fas fa-eye emoji"> 123</i>  </div>
+               <i class="fas fa-bookmark emoji ml-4"></i>  </div>
+                
+               </div>
+           
+         </div>
+       </div>
 
-             </div>
-    
-  </div>
 </div>
-</div>    
-
-
-
 
 
 
 
 <!-- ****************** FOURTH IMAGE ****************-->
 
-<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
-    
-         <div class="card">
-                <img src="vv.png" class="card-img-top" alt="...">
-                      <div class="card-body">
+<div class="col-lg col-md col-sm-6 col-xs-6"> 
 
-                         <h5 class="text-left"> <a href="#"> SC99 . RENDEROOM</a> </h5>
+       <div class="card">
+           <img class="rf-project-cover__image" src="https://mir-s3-cdn-cf.behance.net/projects/202/a0758275804935.Y3JvcCw4NTAsNjY0LDAsMTEx.jpg" srcset="https://mir-s3-cdn-cf.behance.net/projects/202/a0758275804935.Y3JvcCw4NTAsNjY0LDAsMTEx.jpg, https://mir-s3-cdn-cf.behance.net/projects/404/a0758275804935.Y3JvcCw4NTAsNjY0LDAsMTEx.jpg 2x" alt="PATTERNS 2018" title="PATTERNS 2018">
+
+           <div class="card-body">
+              <h5 class="text-left"> <a href="#"> <strong> SC99 . RENDEROOM </strong> </a> </h5>
+                       <br>
                   <p class="text-left"> Serial CUT</p> 
                   <p class="text-left"> ....</p> 
                   <p class="text-left"> Direction artistique</p> 
-                   <p class="line"> </p> 
-                         <div class="row">
-                         <div class="col-md-6 text-left">  
-                 <i class="fas fa-eye emoji"> 45</i>  </div> 
-                <div class="col-md-6 text-center">
-               <i class="fas fa-eye emoji"> 123</i>  </div>
+                  <p class="line"> </p> 
 
-             </div>
+           <div class="row">
+
+               <div class="col-md-6 text-left">  
+                  <i class="fas fa-eye emoji ml-5"> 1</i> <i class="fas fa-eye emoji mr-4"> 18</i></div> 
+               <div class="col-md-6 text-center">
+               <i class="fas fa-bookmark emoji ml-4"></i>  </div>
+                
+               </div>
     
-  </div>
+           </div>
+       </div>
 </div>
-  </div>
 
 <!-- ******************* FIFTH IMAGE ******************* -->
 
-<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
-      <div class="card">
-                <img src="vv.png" class="card-img-top" alt="...">
-                      <div class="card-body">
+<div class="col-lg col-md col-sm-6 col-xs-6"> 
 
-                         <h5 class="text-left"> <a href="#"> SC99 . RENDEROOM</a> </h5>
+       <div class="card">
+           <img class="rf-project-cover__image" src="https://mir-s3-cdn-cf.behance.net/projects/202/d805f276058347.Y3JvcCwxODQxLDE0NDAsMzYwLDA.png" srcset="https://mir-s3-cdn-cf.behance.net/projects/202/d805f276058347.Y3JvcCwxODQxLDE0NDAsMzYwLDA.png, https://mir-s3-cdn-cf.behance.net/projects/404/d805f276058347.Y3JvcCwxODQxLDE0NDAsMzYwLDA.png 2x" alt="Apple Chinese New Year" title="Apple Chinese New Year">
+
+            <div class="card-body">
+
+                  <h5 class="text-left"> <a href="#"> <strong> SC99 . RENDEROOM </strong> </a> </h5>
+                  <br>
                   <p class="text-left"> Serial CUT</p> 
                   <p class="text-left"> ....</p> 
                   <p class="text-left"> Direction artistique</p> 
-                   <p class="line"> </p> 
-                         <div class="row">
-                         <div class="col-md-6 text-left">  
-                 <i class="fas fa-eye emoji"> 45</i>  </div> 
-                <div class="col-md-6 text-center">
-               <i class="fas fa-eye emoji"> 123</i>  </div>
+                  <p class="line"> </p> 
 
+             <div class="row">
+
+                 <div class="col-md-6 text-left">  
+                   <i class="fas fa-eye emoji ml-5"> 5</i> <i class="fas fa-eye emoji mr-4"> 12</i></div> 
+                  <div class="col-md-6 text-center">
+               <i class="fas fa-bookmark emoji ml-4"></i>  </div>
+                
              </div>
     
-  </div>
-</div> 
+           </div>
+       </div>
 </div>
+
 
 <!-- ************************* SIXTH IMAGE *********************** -->
 
-<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+<div class="col-lg col-md col-sm-6 col-xs-6"> 
 
-     <div class="card">
-                <img src="vv.png" class="card-img-top" alt="...">
-                      <div class="card-body">
+   <div class="card">
+            <img class="rf-project-cover__image" src="https://mir-s3-cdn-cf.behance.net/projects/202/65e7b575945023.Y3JvcCwxMjg3LDEwMDcsNjMsMA.jpg" srcset="https://mir-s3-cdn-cf.behance.net/projects/202/65e7b575945023.Y3JvcCwxMjg3LDEwMDcsNjMsMA.jpg, https://mir-s3-cdn-cf.behance.net/projects/404/65e7b575945023.Y3JvcCwxMjg3LDEwMDcsNjMsMA.jpg 2x" alt="Moleskine Sketches II" title="Moleskine Sketches II">
 
-                         <h5 class="text-left"> <a href="#"> SC99 . RENDEROOM</a> </h5>
-                  <p class="text-left"> Serial CUT</p> 
-                  <p class="text-left"> ....</p> 
-                  <p class="text-left"> Direction artistique</p> 
-                   <p class="line"> </p> 
-                         <div class="row">
-                         <div class="col-md-6 text-left">  
-                 <i class="fas fa-eye emoji"> 45</i>  </div> 
+     <div class="card-body">
+              <h5 class="text-left"> <a href="#"> <strong> SC99 . RENDEROOM </strong> </a> </h5>
+              <br>
+              <p class="text-left"> Serial CUT</p> 
+              <p class="text-left"> ....</p> 
+              <p class="text-left"> Direction artistique</p> 
+              <p class="line"> </p> 
+
+         <div class="row">
+             <div class="col-md-6 text-left"> 
+
+               <i class="fas fa-eye emoji ml-5"> 4</i> <i class="fas fa-eye emoji mr-4"> 12</i></div> 
                 <div class="col-md-6 text-center">
-               <i class="fas fa-eye emoji"> 123</i>  </div>
 
-             </div>
+               <i class="fas fa-bookmark emoji ml-4"></i>  </div>
+         </div>
     
-  </div>
-</div> 
+     </div>
+   </div>
+
 </div>
 
 <!-- ***************** SEVENTH IMAGE ************************ -->
 
- <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
-        <div class="card">
-                <img src="vv.png" class="rounded float-left">
-                      <div class="card-body">
+ <div class="col-lg col-md col-sm-6 col-xs-6"> 
 
-                         <h5 class="text-left"> <a href="#"> SC99 . RENDEROOM</a> </h5>
-                  <p class="text-left"> Serial CUT</p> 
-                  <p class="text-left"> ....</p> 
-                  <p class="text-left"> Direction artistique</p> 
-                   <p class="line"> </p> 
-                         <div class="row">
-                         <div class="col-md-6 text-left">  
-                 <i class="fas fa-eye emoji"> 45</i>  </div> 
-                <div class="col-md-6 text-center">
-               <i class="fas fa-eye emoji"> 123</i>  </div>
+     <div class="card">
+
+           <img class="rf-project-cover__image" src="https://mir-s3-cdn-cf.behance.net/projects/202/525a6175805959.Y3JvcCwxMjQ2LDk3NSw3Nyww.jpg" srcset="https://mir-s3-cdn-cf.behance.net/projects/202/525a6175805959.Y3JvcCwxMjQ2LDk3NSw3Nyww.jpg, https://mir-s3-cdn-cf.behance.net/projects/404/525a6175805959.Y3JvcCwxMjQ2LDk3NSw3Nyww.jpg 2x" alt="Milly Mix" title="Milly Mix">
+
+       <div class="card-body">
+
+           <h5 class="text-left"> <a href="#"> <strong> SC99 . RENDEROOM </strong> </a> </h5>
+           <br>
+           <p class="text-left"> Serial CUT</p> 
+           <p class="text-left"> ....</p> 
+           <p class="text-left"> Direction artistique</p> 
+           <p class="line"> </p> 
+
+             <div class="row">
+                   <div class="col-md-6 text-left"> 
+
+                      <i class="fas fa-eye emoji ml-5"> 4</i> <i class="fas fa-eye emoji mr-4"> 12</i></div> 
+                     <div class="col-md-6 text-center">
+
+                      <i class="fas fa-bookmark emoji ml-4"></i>  </div>
+                
+
+               
 
              </div>
     
-  </div>
-</div> 
+       </div>
+     </div>
  </div>
 
 <!-- ************************ EIGHT IMAGE ***********************-->
 
-<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+<div class="col-lg col-md col-sm-6 col-xs-6"> 
 
-     <div class="card">
-                <img src="vv.png" class="rounded float-left">
-                      <div class="card-body">
+         <div class="card">
+             <img class="rf-project-cover__image" src="https://mir-s3-cdn-cf.behance.net/projects/202/66cafd70084287.Y3JvcCwxNzE4LDEzNDQsMzY1LDQ2.jpg" srcset="https://mir-s3-cdn-cf.behance.net/projects/202/66cafd70084287.Y3JvcCwxNzE4LDEzNDQsMzY1LDQ2.jpg, https://mir-s3-cdn-cf.behance.net/projects/404/66cafd70084287.Y3JvcCwxNzE4LDEzNDQsMzY1LDQ2.jpg 2x" alt="C°F WEATHER CHARTS" title="C°F WEATHER CHARTS">
 
-                         <h5 class="text-left"> <a href="#"> SC99 . RENDEROOM</a> </h5>
+           <div class="card-body">
+
+                 <h5 class="text-left"> <a href="#"> <strong> SC99 . RENDEROOM </strong> </a> </h5>
+                 <br>
+                 <p class="text-left"> Serial CUT</p> 
+                 <p class="text-left"> ....</p> 
+                 <p class="text-left"> Direction artistique</p> 
+                 <p class="line"> </p> 
+
+                     <div class="row">
+
+                         <div class="col-md-6 text-left">  
+
+                 <i class="fas fa-eye emoji ml-5"> 4</i> <i class="fas fa-eye emoji mr-4"> 12</i></div> 
+                <div class="col-md-6 text-center">
+               <i class="fas fa-bookmark emoji ml-4"></i>  </div>
+                
+                     </div>
+    
+           </div>
+         </div>
+</div>
+
+
+<!-- ninth image -->
+
+<div class="col-lg col-md col-sm-6 col-xs-6"> 
+
+          <div class="card">
+               <img class="rf-project-cover__image" src="https://mir-s3-cdn-cf.behance.net/projects/202/1aeeaa74594439.Y3JvcCw2MDcsNDc1LDE5NSwxNDQ.jpg" srcset="https://mir-s3-cdn-cf.behance.net/projects/202/1aeeaa74594439.Y3JvcCw2MDcsNDc1LDE5NSwxNDQ.jpg, https://mir-s3-cdn-cf.behance.net/projects/404/1aeeaa74594439.Y3JvcCw2MDcsNDc1LDE5NSwxNDQ.jpg 2x" alt="IBM Supply Chain" title="IBM Supply Chain">
+
+              <div class="card-body">
+
+                     <h5 class="text-left"> <a href="#"> <strong> SC99 . RENDEROOM </strong> </a> </h5>
+                     <br>
+                     <p class="text-left"> Serial CUT</p> 
+                     <p class="text-left"> ....</p> 
+                     <p class="text-left"> Direction artistique</p> 
+                     <p class="line"> </p> 
+
+                   <div class="row">
+
+                         <div class="col-md-6 text-left">
+
+                            <i class="fas fa-eye emoji ml-5"> 4</i> <i class="fas fa-eye emoji mr-4"> 12</i>
+                         </div> 
+
+
+                <div class="col-md-6 text-center">
+               <i class="fas fa-bookmark emoji ml-4"></i>  
+                </div>
+                
+                   </div>
+    
+             </div>
+           </div>
+</div>
+
+<!-- tenth image -->
+
+<div class="col-lg col-md col-sm-6 col-xs-6"> 
+
+          <div class="card">
+
+                <img class="rf-project-cover__image" src="https://mir-s3-cdn-cf.behance.net/projects/202/5f8fb176050815.Y3JvcCw5NTAsNzQzLDAsMzA.jpg" srcset="https://mir-s3-cdn-cf.behance.net/projects/202/5f8fb176050815.Y3JvcCw5NTAsNzQzLDAsMzA.jpg, https://mir-s3-cdn-cf.behance.net/projects/404/5f8fb176050815.Y3JvcCw5NTAsNzQzLDAsMzA.jpg 2x" alt="Burrow" title="Burrow">
+
+             <div class="card-body">
+
+                  <h5 class="text-left"> <a href="#"> <strong> SC99 . RENDEROOM </strong> </a> </h5>
+                  <br>
                   <p class="text-left"> Serial CUT</p> 
                   <p class="text-left"> ....</p> 
                   <p class="text-left"> Direction artistique</p> 
-                   <p class="line"> </p> 
-                         <div class="row">
+                  <p class="line"> </p> 
+
+                     <div class="row">
+
                          <div class="col-md-6 text-left">  
-                 <i class="fas fa-eye emoji"> 45</i>  </div> 
+
+                 <i class="fas fa-eye emoji ml-5"> 4</i> <i class="fas fa-eye emoji mr-4"> 12</i>
+                         </div> 
+
                 <div class="col-md-6 text-center">
-               <i class="fas fa-eye emoji"> 123</i>  </div>
+               <i class="fas fa-bookmark emoji ml-4"></i>  
+                </div>
+                
 
-             </div>
+                    </div>
     
-  </div>
+             </div>
+          </div>
 </div>
+
+
+
+
+
+    </div>
+  </center>
+</div>
+
+
+
+
+
+
+<!-- ********** Pied de page ********* -->
+
+
+ <footer>
+
+   <div class="row">
+
+         <div class="col-lg-9 col-md-10 col-sm-10"> 
+
+<!-- button : encore plus de Behance -->
+
+           <button class="btn text-muted down-menu taille-texte btn-reverse dropdown-toggle ml-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Encore plus de Behance
+           </button>
+
+       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+           <a class="dropdown-item" href="#">Action</a>
+           <a class="dropdown-item" href="#">Another action</a>
+           <a class="dropdown-item" href="#">Something else here</a>
+       </div>
+
+
+<!-- button : Français -->
+
+           <button class="btn text-muted down-menu taille-texte btn-reverse dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Français
+           </button>
+
+       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+           <a class="dropdown-item" href="#">Action</a>
+           <a class="dropdown-item" href="#">Another action</a>
+           <a class="dropdown-item" href="#">Something else here</a>
+       </div>
+
+<!-- CONDITION D'UTILISATION -->
+
+<a class="ml-4 mr-4 mt-2 text-muted taille-texte" href="#" > <strong> CONDITION D'UTILISATION </strong> </a>
+
+<!-- Confidentialité -->
+
+<a class="ml-2 mr-4 mt-2 text-muted taille-texte" href="#" > <strong> Confidentialité </strong></a>
+
+<!-- Communauté -->
+<a class="ml-2 mr-4 mt-2 text-muted taille-texte" href="#" > <strong> FAQ </strong> </a>
+
+<!-- adchoices -->
+<a class="ml-2 mr-4 mt-2 text-muted taille-texte" href="#" > <img src="/assets/img/footer/icon-ad-choices.png" class="rf-logo--adchoices"> <b> AdChoices 
+</b></a>
+
+<!-- adobe -->
+</div>
+
+     <div class="col-lg-3 col-md-2 col-sm-2 text-right">
+       <i class="fab mr-2 mt-2 text-muted fa-adobe adobe-footer text-secondary taille-texte">  Adobe  </i>
+
+     </div>
+
    </div>
-
-  </div>
-</div>
+ </footer>
 
 
-
-
-
-
-
-
-
-    <footer>
-      <center> <i>  copyright  </i> <small> Behance.net </small> </center>
-    </footer>
 
 </body>
 </html>
