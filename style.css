@@ -1,4 +1,7 @@
 body{
+	
+	margin: -10px;
+	padding: -10px;
 	font-family: "acumin-pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
@@ -9,7 +12,8 @@ body{
 	background: #191919;
 	height: 60px;
 	font-size: 14px;
-	overflow: hidden
+	overflow: hidden;
+
 }
 
 .navbar-button{
@@ -136,13 +140,15 @@ width: 40px;
 
 
 
+
+
+
 /* ****************************** PRESENTATION ***************************** */
 
 .presentation{
 
 height: 210px;
 background: url("https://a5.behance.net/8a9af7f2f1743dafbc3d4685b42e3124d441e5cd/img/site/1x/cta-header.jpg");
-text-align: center;
 
 }
 
@@ -156,14 +162,37 @@ text-align: center;
     margin: -32px auto 0;
     font-family: Arial;
     z-index: 1;
+
   }
 
-@media screen and (max-width: 425px){
-.presentation h1{
-	font-size: 30px;
-	margin-top: 30px;
+
+/* ajusting title font size */
+
+@media screen and (max-width: 768px){
+
+.presentation .display-4{
+	font-size: 40px; 
+
 }
 }
+
+
+@media screen and (max-width: 1000px) and (min-width: 769px){
+
+.presentation .display-4{
+	font-size:50px; 
+}
+}
+
+
+@media screen and (max-width: 258px){
+
+	.presentation .display-4{
+	font-size: 38px; 
+
+}
+}
+
 
 /* ***************************** SECOND NAV BAR **************************** */
 
@@ -173,16 +202,19 @@ text-align: center;
   height: 50px;
   font-family: acumin.woff2;
   margin-top: -20px;
+    
  }
 
 .sc ul{
   width: 1100px;
+ 
   }
 
 .sc li{
 	font-size: 14px;
 	font-family: acumin.woff2;
 	letter-spacing: 1px;
+	
 }
 
 .sc li .active{
@@ -196,6 +228,12 @@ text-align: center;
 	color:#0057ff;
 }
 
+@media screen and (max-width: 400px){
+
+	.sc ul{
+		width: 800px;
+	}
+}
 
 /* **************************** ALBUM ************************************* */
 
@@ -204,8 +242,6 @@ text-align: center;
 	height: 320px;
 	width: 12em;
 	
-    
-
 }
 
 .line{
@@ -257,9 +293,11 @@ text-align: center;
 		margin-top: 20px;
 
           }
+
 }
 
 /* *************************** FOOTER **********************/
+
 footer{
 	margin-top: 90px;
 	background: black;
@@ -279,7 +317,15 @@ footer{
 }
 
 /* ELEMENT FOOTER */
+
 .down-menu{
     
 	border-right: 1px solid gray;
+}
+
+@media screen and (max-width: 800px){
+
+	footer{
+		display: none;
+	}
 }
